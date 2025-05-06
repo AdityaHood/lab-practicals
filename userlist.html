@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+</head>
+<body>
+    <h4>Users List</h4>
+
+    <ol id="oli">
+
+    </ol>
+    <script>
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const ul = document.getElementById('oli');
+        users.forEach((user)=>{
+            const li = document.createElement("li");
+            li.innerText = `Fullname:${user.fullname}
+            Email:${user.email}
+            Password:${user.password}`;
+            ul.appendChild(li)
+        })
+    </script>
+</body>
+</html>
