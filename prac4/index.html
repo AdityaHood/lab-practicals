@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple jQuery Mobile Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery and jQuery Mobile JS -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>My Mobile Site</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Welcome to the mobile-friendly website!</p>
+            <a href="#about" data-role="button">About Us</a>
+            <a href="#contact" data-role="button">Contact</a>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2025 My Site</h4>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>About Us</h1>
+        </div>
+
+        <div data-role="content">
+            <p>This is a simple mobile website built using jQuery Mobile.</p>
+            <a href="#home" data-role="button">Back to Home</a>
+        </div>
+
+        <div data-role="footer">
+            <h4>About Footer</h4>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>Share Details</h1>
+        </div>
+
+        <div data-role="content">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+
+                <input type="submit" value="Submit">
+            </form>
+            <a href="#home" data-role="button">Back to Home</a>
+        </div>
+
+        <div data-role="footer">
+            <h4>Contact Footer</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
